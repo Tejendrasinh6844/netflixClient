@@ -14,7 +14,7 @@ export default function Register() {
   const usernameRef = useRef();
   const axiosInstance = axios.create({
     baseURL:process.env.REACT_APP_API_URL,
-    header: 'Access-Control-Allow-Origin'
+    headers:'Access-Control-Allow-Origin'
   })
   const handleStart = () => {
     setEmail(emailRef.current.value);
